@@ -25,7 +25,8 @@ ln -s /data/server/python-${VERSION} /data/server/python
 
 rm -rf Python-${VERSION}
 if [ ! -f Python-${VERSION}.tgz ];then
-    wget https://www.python.org/ftp/python/${VERSION}/Python-${VERSION}.tgz
+    #wget https://www.python.org/ftp/python/${VERSION}/Python-${VERSION}.tgz
+    wget https://repo.huaweicloud.com/python/${VERSION}/Python-${VERSION}.tgz
 fi
 tar zxvf Python-${VERSION}.tgz
 cd Python-${VERSION}
