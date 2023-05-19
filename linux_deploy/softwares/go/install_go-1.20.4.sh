@@ -18,7 +18,8 @@ ln -s /data/server/go-${goVersion} /data/server/go
 
 rm -rf tmp_go
 if [ ! -f go${goVersion}.linux-amd64.tar.gz ];then
-    wget https://go.dev/dl/go${goVersion}.linux-amd64.tar.gz
+    # wget https://go.dev/dl/go${goVersion}.linux-amd64.tar.gz
+    wget https://mirrors.aliyun.com/golang/go${goVersion}.linux-amd64.tar.gz
 fi
 mkdir tmp_go
 tar xzf go${goVersion}.linux-amd64.tar.gz -C tmp_go
