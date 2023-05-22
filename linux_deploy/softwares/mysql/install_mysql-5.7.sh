@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# apt install libnuma-dev libncurses5
+# yum install numactl
+
 mysqlVersion="5.7.41"
 rootPath="/data/server"
 
